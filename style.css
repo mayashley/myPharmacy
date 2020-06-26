@@ -34,6 +34,16 @@ body {
 	overflow: none;
 	padding: 10px;
 }
+.container h3 {
+    color: rgb(211, 211, 211);
+    padding: 20px;
+    border-radius: 3px;
+    background-color:grey;
+}
+
+.container a {
+    color: rgb(211, 211, 211);
+}
 
 .app-header {
 	background: var(--primary-color);
@@ -162,6 +172,25 @@ body {
 }
 
 #splash.fade {
+	opacity: 0;
+}
+#covid {
+	/* position: absolute; */
+	/* top: 0; */
+	/* left: 0; */
+	/* background: var(--primary-color); */
+	/* height: 100vh; */
+	/* width: 100%; */
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	/* justify-content: center;s */
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+#covid.fade {
 	opacity: 0;
 }
 

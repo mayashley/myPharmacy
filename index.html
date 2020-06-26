@@ -20,9 +20,12 @@
     <div id="splash">
       <img class="logo" src="img/logo.png" alt="logo pharmacy" />
     </div>
-    <div class="content">
+    <div class="content" id='container'>
       <header class="app-header">
         <div class="container">
+          <div id='covid'>
+          <h3>We're in this together.<a href='#'> Learn more </a>about our COVID-19 efforts.</h3>
+        </div>
           <img class="logo" src="img/logo.png" alt="" />
           <input class="search" type="text" placeholder="Search..." />
         </div>
@@ -49,6 +52,7 @@
         </div>
         <div class="item">
           <h4>MinuiteClinic</h4>
+          <p>Visit one of our many clinics and let us help you fell well again</p>
           <p class="desc"></p>
           <img src="https://i.ibb.co/F6YbmHw/nurse.png" alt="" />
         </div>
@@ -59,12 +63,13 @@
         </div>
         <div class="item">
           <h4>Photo</h4>
+          <p>Order online and pick up at the store or print while you shop</p>
           <p class="desc"></p>
           <img src="https://i.ibb.co/GszTNWF/photo.png" alt="" />
         </div>
         <div class="item">
           <h4>Weekly Ad</h4>
-          <p class="desc">View your weekly ad</p>
+          <p class="desc">View our weekly ad</p>
           <img src="https://i.ibb.co/nDryZ8R/newspaper.png" alt="" />
         </div>
       </div>
@@ -90,11 +95,15 @@
         </li>
       </ul>
     </footer>
-    <!-- makes the splash fade in 1.5 seconds -->
+    <!-- makes the splash fade in 2 seconds -->
     <script>
             setTimeout(() => {
       document.getElementById('splash').classList.toggle('fade')
-            }, 1500);
+            }, 2000);
+// set the covid actions to 2 seconds appear
+            setTimeout(() => {
+      document.getElementById('covid').classList.toggle('fade')
+            }, 6000);
     </script>
   </body>
 </html>
